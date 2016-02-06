@@ -1,3 +1,5 @@
+// *= require font-awesome
+
 $wyncode-blue: #03D1FC;
 $wyncode-red: #FA696F;
 $wyncode-green: #C5D38D;
@@ -6,9 +8,23 @@ $wyncode-grey: #888;
 $wyncode-light-grey: #eee;
 $wyncode-yellow: #FFCC66;
 
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rajdhani Medium'), local('Rajdhani-Medium'), url(http://fonts.gstatic.com/s/rajdhani/v5/fMdPRPskyY3ckg8ymVQ5NrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rajdhani Bold'), local('Rajdhani-Bold'), url(http://fonts.gstatic.com/s/rajdhani/v5/kcO_Mk7pjy8jlu86STaVz7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
 $font-family: "Rajdhani", Helvetica, Arial, sans-serif;
 
 $border-radius: 3px;
+@import "font-awesome";
 
 @import 'base/reset';
 @import 'base/syntax';
@@ -40,7 +56,7 @@ $border-radius: 3px;
 @import 'application/instant-feedback';
 
 @import "wice_grid";
-@import "font-awesome";
+
 
 .report-issue {
 	color: $wyncode-grey;
