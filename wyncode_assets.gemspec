@@ -32,5 +32,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'font-awesome-rails'
   spec.add_dependency 'sass-rails', '>= 4.0.3'
   spec.add_dependency 'bourbon'
-  spec.add_dependency 'font-awesome-sass'
 end
