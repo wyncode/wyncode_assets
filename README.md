@@ -12,13 +12,13 @@ gem 'wyncode_assets', git: 'git://github.com/wyncode/wyncode_assets.git'
 And to application.css:
 
 ```ruby
-// = require wyncode_styles
+// = require wyncode_assets/wyncode_styles
 ```
 
 or, if using Sass & want to use variables, etc:
 
 ```ruby
-@import "wyncode_styles";
+@import "wyncode_assets/wyncode_styles";
 ```
 
 ##Known Issues
