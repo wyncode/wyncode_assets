@@ -1,0 +1,54 @@
+.notifications {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    list-style: none;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+
+    &.notification-item {
+      font-size: .8rem;
+      position: relative;
+
+      footer {
+        font-size: .75rem;
+        color: $wyncode-grey;
+        position: absolute;
+        bottom: 5px;
+        left: 63px;
+      }
+    }
+
+    &.see-more {
+      text-align: center;
+      font-weight: bold;
+      height: 20px;
+      line-height: 20px;
+      background-color: #ccc;
+    }
+
+    &.no-notifications {
+      text-align: center;
+      line-height: 50px;
+      font-weight: bold;
+      &:hover { background-color: #fff ; }
+    }
+
+    &.notification-header {
+      height: 15px;
+      line-height: 15px;
+      &:hover { background-color: #fff; }
+    }
+  }
+}
+.all-notifications {
+  margin-top: 20px;
+  .notification {
+    padding: 10px;
+    &:nth-child(even) { background-color: $wyncode-light-grey; }
+  }
+}

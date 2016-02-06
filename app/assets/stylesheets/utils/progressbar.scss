@@ -1,0 +1,31 @@
+/* PROGRESS BAR */
+.progress {
+	width: 75%;
+	margin: 10px auto;
+}
+.progress-percent {
+	line-height: 10px;
+	height: 100%;
+}
+.progress-bar {
+	width: 100%;
+	height: 10px;
+	display: inline-block;
+	width: 80%;
+	border-radius: $border-radius;
+	background-color: #fff;
+	overflow: hidden;
+	.current-progress { background-color: $wyncode-blue; }
+	.current-progress-pending { background-color: $wyncode-grey; }
+}
+
+.current-progress,
+.current-progress-pending {
+	height: 100%;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	color: white;
+	vertical-align: middle;
+	padding-top: 3px;
+}

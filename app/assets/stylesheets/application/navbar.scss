@@ -1,0 +1,35 @@
+#navbar {
+  position: relative;
+  margin: 15px auto 0;
+  height: 60px;
+  border-bottom: 1px solid #000;
+
+  .navbar-logo,
+  .navbar-cohortinfo,
+  .navbar-userlinks {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .navbar-logo {
+    line-height: 0;
+    img { height: 60px; }
+  }
+
+  .navbar-cohortinfo {
+    left: 90px;
+    a { text-decoration: none; }
+    p { margin: 0; }
+  }
+
+  .navbar-userlinks {
+    height: 25px;
+    right: 80px;
+  }
+  
+  .navbar-avatar {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+  }
+}

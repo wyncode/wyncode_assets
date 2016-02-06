@@ -1,0 +1,107 @@
+.pull-right { float: right; }
+.pull-left { float: left; }
+.success { color: $wyncode-green; }
+.lite {
+  font-weight: normal;
+  color: $wyncode-grey;
+}
+
+
+
+
+
+.glowable {
+    color: $wyncode-red;
+    -webkit-transition: text-shadow 0.5s linear;
+    -moz-transition: text-shadow 0.5s linear;
+    -ms-transition: text-shadow 0.5s linear;
+    -o-transition: text-shadow 0.5s linear;
+    transition: text-shadow 0.5s linear;
+    i {
+      color: $wyncode-red;
+      -webkit-animation: ring 8s 1s ease-in-out infinite;
+      transform-origin: 50% 4px;
+    }
+}
+.glow { text-shadow: 0 0 10px #aaa; }
+
+
+@-webkit-keyframes ring {
+  0% { -webkit-transform: rotate(0); }
+  1% { -webkit-transform: rotate(30deg); }
+  3% { -webkit-transform: rotate(-28deg); }
+  5% { -webkit-transform: rotate(34deg); }
+  7% { -webkit-transform: rotate(-32deg); }
+  9% { -webkit-transform: rotate(30deg); }
+  11% { transform: rotate(-28deg); }
+  13% { -webkit-transform: rotate(26deg); }
+  15% { -webkit-transform: rotate(-24deg); }
+  17% { -webkit-transform: rotate(22deg); }
+  19% { -webkit-transform: rotate(-20deg); }
+  21% { -webkit-transform: rotate(18deg); }
+  23% { -webkit-transform: rotate(-16deg); }
+  25% { -webkit-transform: rotate(14deg); }
+  27% { -webkit-transform: rotate(-12deg); }
+  29% { -webkit-transform: rotate(10deg); }
+  31% { -webkit-transform: rotate(-8deg); }
+  33% { -webkit-transform: rotate(6deg); }
+  35% { -webkit-transform: rotate(-4deg); }
+  37% { -webkit-transform: rotate(2deg); }
+  39% { -webkit-transform: rotate(-1deg); }
+  41% { -webkit-transform: rotate(1deg); }
+  43% { -webkit-transform: rotate(0); }
+  100% { -webkit-transform: rotate(0); }
+}
+
+.closed {
+  .toggle-body {
+    display: none;
+  }
+}
+
+.cf {
+  overflow: auto;
+  zoom: 1;
+}
+
+
+
+.fa {
+	color: $wyncode-grey;
+	&.blue { color: $wyncode-blue; }
+  &.green { color: $wyncode-green; }
+  &.red { color: $wyncode-red; }
+}
+
+.toggle-arrow {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	color: $wyncode-grey;
+	&:hover {
+    color: $wyncode-black;
+    cursor: pointer;
+  }
+}
+
+.fa-exclamation-circle {
+  color: red;
+}
+.fa-question-circle {
+  color: gray;
+}
+.fa-1-5x {
+  font-size: 1.3rem;
+}
+.fa-h2 {
+  font-size: 1.3rem;
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+}
+
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

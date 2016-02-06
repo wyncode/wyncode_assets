@@ -1,0 +1,11 @@
+.flash {
+	background-color: $wyncode-blue;
+	color: $wyncode-black;
+	font-weight: bold;
+	padding: 3px;
+	text-align: center;
+	&.error {
+		background-color: $wyncode-red;
+		color: #fff;
+	}
+}

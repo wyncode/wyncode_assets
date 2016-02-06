@@ -1,0 +1,17 @@
+code, .highlight {
+	font-family: monospace;
+	border: 1px solid #ddd;
+	background-color: $wyncode-light-grey;
+	border-radius: $border-radius;
+}
+code {
+	padding: 3px;
+	color: $wyncode-black;
+}
+.highlight {
+	font-family: monospace;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20px 0;
+}

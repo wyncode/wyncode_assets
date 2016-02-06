@@ -1,0 +1,23 @@
+.avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  &.avatar-large {
+  	height: 200px;
+  	width: 200px;
+  	margin: 0 auto;
+  }
+  &.avatar-comment {
+    height: 50px;
+    width: 50px;
+    border-radius: $border-radius;
+  }
+}
+
+.noti-avatar {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin: 5px 10px 0 5px;
+}

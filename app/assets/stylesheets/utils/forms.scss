@@ -1,0 +1,89 @@
+form {
+	margin: 10px;
+	&.flush {
+		margin: 0;
+	}
+}
+
+input, button, .btn, select, option, textarea {
+	padding: 5px 10px;
+	margin: 5px;
+	font-size: 1rem;
+	border-radius: $border-radius;
+	font-family: $font-family;
+	border-color: $wyncode-grey;
+	outline: none;
+	box-sizing: border-box;
+
+	&.narrow { width: 60px; }
+	&.wide { width: 300px; }
+	&:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px #fff inset; }
+}
+a.btn {
+	padding: 9px 13px;
+	line-height: 35px;
+}
+
+textarea {
+	width: 100%;
+	resize: vertical;
+	min-height: 100px;
+	&:focus { border-color: $wyncode-blue; }
+}
+
+input[type=text], input[type=password] {
+	border: 1px solid $wyncode-grey;
+	&:focus { border: 1px solid $wyncode-blue; }
+}
+
+input[type=submit], button, .btn {
+	padding: 5px 20px;
+	background-color: $wyncode-blue;
+	border: 1px solid $wyncode-blue;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: $font-family;
+
+	&:active { background-color: $wyncode-grey; }
+	&:hover, &:focus {
+		border-color: $wyncode-grey;
+		text-decoration: none;
+	}
+
+	&.btn-secondary {
+		background-color: $wyncode-light-grey;
+		border: 1px solid $wyncode-grey;
+		color: $wyncode-grey;
+
+		&:hover, &:focus {
+			color: $wyncode-black;
+			border: 1px solid $wyncode-black;
+		}
+		&:active {
+			color: $wyncode-blue;
+			border: 1px solid $wyncode-blue;
+		}
+	}
+
+	&.btn-success {
+		background-color: $wyncode-green;
+		border: 1px solid $wyncode-green;
+
+		&:hover, &:focus { border: 1px solid $wyncode-grey; }
+		&:active { background-color: $wyncode-grey; }
+	}
+
+	&.btn-error {
+		background-color: $wyncode-red;
+		border: 1px solid $wyncode-red;
+
+		&:hover, &:focus { border: 1px solid $wyncode-grey; }
+		&:active { background-color: $wyncode-grey; }
+	}
+
+	&.btn-disabled {
+		background-color: $wyncode-grey;
+		color: $wyncode-black;
+		border: 1px solid $wyncode-grey;
+	}
+}

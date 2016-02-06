@@ -1,0 +1,25 @@
+div > span:first-child { margin-left: 0; }
+.tag {
+	padding: 5px 8px;
+	border-radius: 3px;
+	color: #fff;
+	margin: 5px;
+}
+.tag-green {
+	background-color: $wyncode-green;
+}
+.tag-blue {
+	background-color: $wyncode-blue;
+}
+.tag-red {
+	background-color: $wyncode-red;
+}
+.tag-grey {
+	background-color: $wyncode-grey;
+}
+.tag-yellow {
+	background-color: $wyncode-yellow;
+}
+.tag-small {
+	font-size: .75rem;
+}

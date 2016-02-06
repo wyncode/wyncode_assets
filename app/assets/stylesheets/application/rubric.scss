@@ -1,0 +1,18 @@
+.rubric {
+	thead {
+		font-weight: bold;
+		text-align: center;
+	}
+	width: 100%;
+	.rubric-item-name {
+		width: 10%;
+	}
+	.rubric-item-criteria {
+		width: 18%;
+		font-size: .8rem;
+	}
+	td {
+		border: 1px solid $wyncode-grey;
+		padding: 5px;
+	}
+}

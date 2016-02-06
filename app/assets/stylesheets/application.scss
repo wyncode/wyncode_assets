@@ -1,0 +1,53 @@
+$wyncode-blue: #03D1FC;
+$wyncode-red: #FA696F;
+$wyncode-green: #C5D38D;
+$wyncode-black: #4d4d4d;
+$wyncode-grey: #888;
+$wyncode-light-grey: #eee;
+$wyncode-yellow: #FFCC66;
+
+$font-family: "Rajdhani", Helvetica, Arial, sans-serif;
+
+$border-radius: 3px;
+
+@import 'base/reset';
+@import 'base/syntax';
+
+@import 'utils/utils';
+@import 'utils/forms';
+@import 'utils/avatar';
+@import 'utils/dropdown';
+@import 'utils/progressbar';
+@import 'utils/flash';
+@import 'utils/tooltip';
+@import 'utils/syntax_highlighting';
+@import 'utils/tag';
+@import 'utils/comment';
+
+@import 'application/typography';
+@import 'application/layout';
+@import 'application/navbar';
+@import 'application/notifications';
+@import 'application/course_dashboard';
+@import 'application/happening_today';
+@import 'application/cohort_dashboard_nav';
+@import 'application/login';
+@import 'application/unit_dashboard';
+@import 'application/task_dashboard';
+@import 'application/rubric';
+@import 'application/admin-panel';
+@import 'application/cohort-submissions';
+@import 'application/instant-feedback';
+
+@import "wice_grid";
+@import "font-awesome";
+
+.report-issue {
+	color: $wyncode-grey;
+	font-weight: bold;
+	font-size: .8rem;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	z-index: 999;
+}

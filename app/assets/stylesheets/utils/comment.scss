@@ -1,0 +1,68 @@
+.comment {
+	margin: 20px 7px;
+
+	.comment-avatar {
+		width: 50px;
+		float: left;
+	}
+
+	.comment-area {
+		margin-left: 65px;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: $border-radius;
+		position: relative;
+		&> textarea {
+			margin: 0;
+		}
+
+		&:after, &:before {
+			right: 100%;
+			top: 20px;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		&:after {
+			border-color: rgba(238, 238, 238, 0);
+			border-right-color: #eee;
+			border-width: 6px;
+			margin-top: -6px;
+		}
+
+		&:before {
+			border-color: rgba(221, 221, 221, 0);
+			border-right-color: #ddd;
+			border-width: 7px;
+			margin-top: -7px;
+		}
+	}
+
+	.comment-header {
+		margin: 0;
+		background-color: $wyncode-light-grey;
+		border-bottom: 1px solid #ddd;
+		font-size: .75rem;
+		height: 20px;
+		line-height: 20px;
+		padding: 5px 10px;
+	}
+
+	.comment-body {
+		min-height: 30px;
+		padding: 10px;
+		p { margin: 5px 0; }
+	}
+
+	&.mine {
+		.comment-area {
+			// border: 1px solid $wyncode-blue;
+			// &:before { border-right-color: $wyncode-blue; }
+		}
+		// .comment-header { border-bottom: 1px solid $wyncode-blue; }
+	}
+}

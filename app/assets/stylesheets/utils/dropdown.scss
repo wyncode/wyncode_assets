@@ -1,0 +1,75 @@
+.dropdown {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  z-index: 999;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .dropdown-trigger{
+    padding: 3px 0 3px 10px;
+    margin: 3px 0px;
+    width: auto;
+    &.no-bg:hover { background-color: transparent; }
+    .fa {
+      position: relative;
+      right: 5px;
+      padding: 0 5px;
+    }
+    &:hover {
+      background-color: $wyncode-light-grey;
+      i { color: $wyncode-black; }
+    }
+  }
+  .dropdown-items {
+    cursor: default;
+    display: none;
+    position: absolute;  
+    right: 0;
+    top: 25px;
+    background-color: #fff;
+    min-width: 120px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 7px #999;
+    &:after, &:before {
+      bottom: 100%;
+      right: 15px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #fff;
+      border-width: 5px;
+      margin-right: -5px;
+    }
+    &:before {
+      border-color: rgba(0, 0, 0, 0);
+      border-bottom-color: #000000;
+      border-width: 6px;
+      margin-right: -6px;
+    }
+
+    // List items, or list items that are nested inside links
+    > a {
+      text-decoration: none;
+    }
+    > li, > a > li {
+      padding: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+    > li:hover, > a:hover li { background-color: #eee; }
+    > li:last-child, > a:last-child li { border-bottom: none; }
+
+  }
+}

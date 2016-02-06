@@ -1,0 +1,33 @@
+// .unit-task {
+// 	&:before {
+// 		content: "\f063";
+// 		font-family: "FontAwesome";
+// 		position: absolute;
+// 		top: 100%;
+// 		margin-top: -15px;
+// 		left: 50%;
+// 		margin-left: -25px;
+// 		// border: 1px solid $wyncode-grey;
+// 		width: 47px;
+// 		height: 47px;
+// 		line-height: 47px;
+// 		display: block;
+// 		border-radius: 50%;
+// 		background: #fff;
+// 		text-align: center;
+// 		z-index: 999;
+// 	}
+// 	&:last-child:before {
+// 		content: none;
+// 	}
+// }
+.unit-task-list {
+	margin: 10px 0;
+	padding: 5px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+.unit-task {
+	padding: 10px;
+	&:nth-child(odd) { background-color: $wyncode-light-grey;}
+}

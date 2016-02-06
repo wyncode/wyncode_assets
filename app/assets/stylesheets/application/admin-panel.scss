@@ -1,0 +1,13 @@
+.module.user-list {
+  .users {
+    text-align: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li:nth-child(2) {
+        font-weight: 700;
+      }
+    }
+  }
+}

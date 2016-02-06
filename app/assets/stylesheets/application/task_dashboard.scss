@@ -1,0 +1,25 @@
+.task-chain {
+	position: relative;
+	margin: 0 7px;
+	&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 20px;
+		bottom: 20px;
+		width: 2px;
+		left: 100px;
+		background-color: #ddd;
+		z-index: -1;
+	}
+}
+.submission-event {
+	background-color: #fff;
+	color: $wyncode-grey;
+	font-size: .75rem;
+	padding: 5px 10px;
+	margin-left: 65px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	border-radius: $border-radius;
+}

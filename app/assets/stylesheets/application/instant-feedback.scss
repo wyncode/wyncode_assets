@@ -1,0 +1,76 @@
+#submission-check.loading {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(asset_path('feedback-loading.gif'));
+    color: transparent;
+}
+#instant-feedback .example {
+  min-height: 75px;
+  position:relative;
+  width: 100%;
+  margin: 5px 0;
+  border: 2px solid;
+  border-radius: 10px;
+  .title {
+    font-size: 24px;
+    display: block;
+    margin: 10px 10px 0 85px;
+  }
+  .title:only-child {
+    margin-top: 27px;
+  }
+  .body {
+    font-size: 14;
+    color: $wyncode-grey;
+    margin: 10px 10px 0 85px; 
+  }
+}
+
+#instant-feedback .example::before {
+  min-height: 75px;
+  height: 100%;
+  position: absolute;
+  width: 75px;
+  display: block;
+  margin-left: -2px;
+  margin-top: -2px;
+  float: left;
+  border: 2px solid;
+  border-radius: 10px 0 0 10px;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
+
+#instant-feedback .example.passed {
+  border-color: $wyncode-green;
+  color: $wyncode-green;
+}
+#instant-feedback .example.passed::before {
+  background-color: $wyncode-green;
+  border-color: $wyncode-green;
+  background-image: url(asset_path('success.svg'));
+}
+
+#instant-feedback .example.failed {
+  border-color: $wyncode-red;
+  color: $wyncode-red;
+}
+#instant-feedback .example.failed::before {
+  background-color: $wyncode-red;
+  border: 2px solid $wyncode-red;
+  background-image: url(asset_path('failure.svg'));
+}
+
+#instant-feedback .example.error {
+  // background-color: $wyncode-red;
+  border-color: $wyncode-red;
+  color: $wyncode-red;
+}
+#instant-feedback .example.error::before {
+  background-color: white;
+  border: 2px solid $wyncode-red;
+  background-image: url(asset_path('error.svg'));
+}
+

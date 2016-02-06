@@ -1,0 +1,46 @@
+html {
+	font-family: $font-family;
+	color: #4d4d4d;	
+}
+
+strong { font-weight: bold; }
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #000;
+}
+
+h2, h3 {
+	color: #000;
+	font-size: 1.705rem;	
+}
+
+h2 {
+	font-weight: bold;
+	display: inline-block;
+	margin: 5px 0;
+}
+h3 { font-weight: normal; }
+
+a {
+	color: $wyncode-black;
+	text-decoration: none;
+	&:hover { text-decoration: underline; }
+}
+
+.task-chain a {
+	color: $wyncode-blue;
+	text-decoration: underline;
+}
+
+p {
+	margin: 20px 0;
+	line-height: 1.5;
+}
+pre {
+	line-height: 1.5;
+	overflow: scroll;
+}
+
+::selection { background-color: $wyncode-blue; }
