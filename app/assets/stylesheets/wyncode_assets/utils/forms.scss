@@ -43,6 +43,13 @@ input[type=submit], button, .btn {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: $font-family;
+  position: relative;
+  i.fa {
+    position: relative;
+    top: 2px;
+    left: -2px;
+  }
+
 
 	&:active { background-color: $wyncode-grey; }
 	&:hover, &:focus {
