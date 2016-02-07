@@ -1,6 +1,6 @@
 # WyncodeAssets
 
-This gem extracts common assets (currently only styles & wice grid) from Goodmeasure to be shared accross all wyncode applications.
+This gem extracts common assets from Goodmeasure to be shared accross all wyncode applications.
 
 ## Installation
 Add to Gemfile:
@@ -34,6 +34,5 @@ Develop with stylesheets/scripts natively in the app as necessary. If a style or
 
 ##Known Issues
 
-- Currently is just a rip of all of Goodmeasure's styles. Ideally, would contain only shared business styles while Goodmeasure/GoodAdmission/etc specific styles would remain in their requisite applications.
+- Currently the styles are just a rip of all of Goodmeasure's styles. Ideally, would contain only shared business styles while Goodmeasure/GoodAdmission/etc specific styles would remain in their requisite applications.
 
-- Currently is just stylesheets & wice grid. Ideally, would contain images and other scripts as well.
