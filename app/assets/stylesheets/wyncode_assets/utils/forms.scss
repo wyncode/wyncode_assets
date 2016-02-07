@@ -54,6 +54,10 @@ input[type=submit], button, .btn {
 		background-color: $wyncode-light-grey;
 		border: 1px solid $wyncode-grey;
 		color: $wyncode-grey;
+		
+		&.light {
+			background-color: white;
+		}
 
 		&:hover, &:focus {
 			color: $wyncode-black;
@@ -62,10 +66,6 @@ input[type=submit], button, .btn {
 		&:active {
 			color: $wyncode-blue;
 			border: 1px solid $wyncode-blue;
-		}
-
-		&.light {
-			background-color: white;
 		}
 	}
 
