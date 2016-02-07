@@ -1,3 +1,3 @@
 module WyncodeAssets
-  VERSION = "0.2.2b"
+  VERSION = "0.2.2c"
 end
