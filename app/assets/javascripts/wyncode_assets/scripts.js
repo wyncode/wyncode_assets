@@ -36,6 +36,11 @@ var wyncode_scripts_ready = function() {
   }).on('mouseleave', '.tooltip', function() {
     $(this).find('.tooltip-content').hide();
   });
+
+  // Syntax Highlighting
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
 };
 
 $(document).ready(wyncode_scripts_ready);
