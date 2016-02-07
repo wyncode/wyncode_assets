@@ -16,8 +16,6 @@ var wyncode_scripts_ready = function() {
   $('.toggle-menu').on('click', '.toggle-header', function() {
     var $toggleMenu = $(this).closest('.toggle-menu'),
       $toggleArrow = $toggleMenu.find('.toggle-arrow i');
-
-
     if ($toggleMenu.hasClass('closed')) {
       $toggleMenu.find('.toggle-body').slideDown("fast", "linear");
       $toggleMenu.removeClass('closed').addClass('open');
@@ -26,7 +24,6 @@ var wyncode_scripts_ready = function() {
       $toggleMenu.find('.toggle-body').slideUp("fast", "linear");
       $toggleMenu.removeClass('open').addClass('closed');
       $toggleArrow.removeClass('fa-caret-down').addClass('fa-caret-left');
-
     }
   });
 
@@ -38,14 +35,19 @@ var wyncode_scripts_ready = function() {
   });
 
   // Syntax Highlighting
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-  });
+  var highlightAll = function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    };
 
   // Markdown Rendering
   $(".marked-render").each(function(i) {
     $( this ).html(marked($( this ).data("raw")));
+    highlightAll();
   });
+
+
 };
 
 $(document).ready(wyncode_scripts_ready);
