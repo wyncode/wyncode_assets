@@ -37,7 +37,7 @@ Develop with stylesheets/scripts natively in the app as necessary. If a style or
 Use the `rendered` view helper. Ex:
 
 ```html
-<%= rendered @task.prompt_raw %>
+<%= render\_markdown @task.prompt_raw %>
 ```
 
 ##Known Issues
