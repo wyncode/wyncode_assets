@@ -69,10 +69,16 @@ input[type=submit], button, .btn {
 		&:hover, &:focus {
 			color: $wyncode-black;
 			border: 1px solid $wyncode-black;
+			i.fa {
+				color: $wyncode-black;
+			}
 		}
 		&:active {
 			color: $wyncode-blue;
 			border: 1px solid $wyncode-blue;
+			i.fa {
+				color: $wyncode-blue;
+			}
 		}
 	}
 
