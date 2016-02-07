@@ -41,6 +41,11 @@ var wyncode_scripts_ready = function() {
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
   });
+
+  // Markdown Rendering
+  $(".marked-render").each(function(i) {
+    $( this ).html(marked($( this ).data("raw")));
+  });
 };
 
 $(document).ready(wyncode_scripts_ready);
