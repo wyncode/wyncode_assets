@@ -74,13 +74,18 @@
 }
 
 .toggle-arrow {
-	position: absolute;
-	top: 15px;
-	right: 20px;
-	color: $wyncode-grey;
-	&:hover {
-    color: $wyncode-black;
-    cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: $wyncode-grey;
+}
+
+.toggle-header:hover {
+  cursor: pointer;
+  .toggle-arrow {
+    .fa {
+      color: $wyncode-black;
+    }
   }
 }
 

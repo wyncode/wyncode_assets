@@ -13,7 +13,7 @@ var wyncode_scripts_ready = function() {
 
 
   // Toggle menu
-  $('.toggle-menu').on('click', '.toggle-arrow', function() {
+  $('.toggle-menu').on('click', '.toggle-header', function() {
     var $toggleMenu = $(this).closest('.toggle-menu'),
       $toggleArrow = $toggleMenu.find('.toggle-arrow i');
 
