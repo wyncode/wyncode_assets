@@ -12,7 +12,7 @@ gem 'wyncode_assets', git: 'git://github.com/wyncode/wyncode_assets.git'
 Now load the stylesheets and javascripts.
 Add this to application.css:
 
-```ruby
+```css
 // = require wyncode_assets/wyncode_styles
 ```
 
