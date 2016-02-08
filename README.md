@@ -34,12 +34,13 @@ Develop with stylesheets/scripts natively in the app as necessary. If a style or
 
 ### Markdown Rendering
 
-Use the `rendered` view helper. Ex:
+Use the `render_markdown` view helper. Ex:
 
 ```html
-<%= render\_markdown @task.prompt_raw %>
+<%= render_markdown @task.prompt_raw %>
 ```
 
+Includes full syntax highlighting for HTML/CSS/Ruby/Javascript/HTTP/SQL/Markdown
 ##Known Issues
 
 - Currently the styles are just a rip of all of Goodmeasure's styles. Ideally, would contain only shared business styles while Goodmeasure/GoodAdmission/etc specific styles would remain in their requisite applications.
