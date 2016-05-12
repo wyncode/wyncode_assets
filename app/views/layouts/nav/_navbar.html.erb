@@ -1,0 +1,8 @@
+<nav id="navbar">
+	<%= link_to root_path, class: "navbar-logo" do %>
+		<img src="http://i.imgur.com/WdXNyfs.png">
+			<h1><%= link_to "Wyncode", cohorts_path %></h1>
+		<% end %>
+	</div>
+	<%= render 'layouts/nav/navigation' if current_user %>
+</nav>

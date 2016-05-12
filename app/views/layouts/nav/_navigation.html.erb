@@ -1,0 +1,6 @@
+<div class="navbar-userlinks">
+	<%= render 'layouts/nav/userlinks' %>
+</div>
+<%= link_to profile_path do %>
+	<%= image_tag current_user.avatar.url(:thumb), class: "navbar-avatar avatar" %>
+<% end %>
