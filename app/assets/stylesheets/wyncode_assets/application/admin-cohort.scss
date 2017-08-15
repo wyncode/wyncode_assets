@@ -1,0 +1,21 @@
+.dataTables_info{
+	display: flex;
+    justify-content: center;
+}
+
+.dataTables_paginate{
+	display: flex;
+	justify-content: center;
+	span{
+		margin: 5px;
+	}
+	.paginate_button{
+	margin-right: 15px;
+	padding: 5px; 
+	color: $wyncode-blue;; 
+	
+		.disabled{
+			color: grey; 
+		}
+	}
+}
